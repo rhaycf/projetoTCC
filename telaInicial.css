@@ -35,15 +35,18 @@ body{
 }
 
 .infos{
-    float: right;    
+
+    float: right; 
+    height: 600px;   
 
 }
 
-.nomeLogo, .infosRight{
+.nomeLogo, .infosRight, .botoes{
 
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
+    margin: 50px 0;
     width: 500px;
 
 }
@@ -51,23 +54,19 @@ body{
 .nomeLogo{
 
     font-size: 27px;
-    height: 200px;
 
 }
 
 .infosRight{
 
-    height: 200px;
+    height: 100px;
 
 }
 
 .infosRight p{
 
-    
     margin: 0px 25px;
     text-align: center;
-    display: flex;
-    align-items: center;
 
 }
 
@@ -77,25 +76,17 @@ body{
 
 }
 
-.botoes{
+.botoes {
 
-    align-items: center;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-
+    height: 100px;
 }
 
 .botoes button{
     
     border-radius: 20px;
-    height: 40px;
-    width: 80px;
+    height: 45px;
+    width: 150px;
     margin: 0px 25px;
     text-align: center;
-
-
-
-
 
 }
