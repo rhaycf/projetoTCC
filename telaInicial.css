@@ -1,0 +1,49 @@
+/* Reset CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: 'Lora', serif;
+}
+
+.modalInicio{
+    border: 1px solid;
+    height: 600px;
+    width: 1000px;
+    margin: 200px auto;
+}
+
+.infos, .imgInicio{
+    display: inline-block;    
+}
+
+.imgInicio img{
+    height: 600px;
+    width: 500px;
+}
+
+.infos{
+    float: right;    
+}
+
+.nomeLogo, .infosRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+
+.nomeLogo{
+    font-size: 27px;
+    height: 200px;
+}
+
+.infosRight p{
+    height: 300px;
+    margin: 0px 25px;
+    text-align: center;
+}
+
