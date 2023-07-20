@@ -96,6 +96,32 @@ main form input[type="submit"]:hover {
     background: #ff8162;
 }
 
+main .alternative {
+    margin-top: 1rem;
+}
+
+main .alternative span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(166, 166, 166);
+    position: relative;
+}
+
+main .alternative span::before, main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 50px;
+    background: rgba(166, 166, 166);
+
+}
+
+main .alternative span::after {
+    left: 50px;
+}
+
 section.images {
     display: flex;
     align-items: center;
