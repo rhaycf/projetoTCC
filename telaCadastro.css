@@ -1,73 +1,118 @@
-
+/* importando fonte */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 /* Reset CSS */
 * {
+
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+
 }
 
 body {
-    background: #F9F5E7;
+
+    background: #F8E6CC;
     font-weight: 500;
     display: flex;
     min-height: 100vh;
+
+}
+
+.modal {
+    
+    display: flex;
+
+    width: 70vw;
+    height: 95vh;
+    background-color: #ffffff85;
+    
+    border-radius: 2rem;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 5px 0px inset;
+
+    /* posicionamento fixo */
+    position: fixed;
+    top: 50%;
+    left: 50%;    
+    
+    /* pra conseguir centralizar */
+    transform: translate(-50%,-50%);
+
 }
 
 main {
+    
     width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 main h1 {
+    
     color: #ff6347;
     font-size: 3rem;
     margin-bottom: 3rem;
+
 }
 
 main .social-media {
+
     display: flex;
     align-content: center;
+
 }
 
 main .social-media a {
+
     text-decoration: none;
+
 }
 
 main .social-media img {
+
     width: 36px;
     margin-left: 3rem;
+    margin-top: 1rem;
+
 }
 
 /* pegar um elemento especifico */
 main .social-media a:first-child img {
+
     margin-left: 0;
+
 }
 
 main form {
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 main form label {
+
     display: flex;
     flex-direction: column;
+
 }
 
 main form label span {
+
     font-size: 1.1rem;
     margin-top: 2rem;
     color: #12365C;
+
 }
 
 main form input {
+
     background-color: #F8E6CC;
     width: 300px;
     height: 50px;
@@ -78,9 +123,11 @@ main form input {
     font-size: 1rem;
     border: 1px solid #F3BA69;
     border-radius: 8px;
+
 }
 
 main form input[type="submit"] {
+
     cursor: pointer;
     width: 50%;
     margin-top: 4rem;
@@ -90,24 +137,32 @@ main form input[type="submit"] {
     background-color: #ff6347;
     color: white;
     transition: all .3s ease-in-out;
+
 }
 
 main form input[type="submit"]:hover {
+
     background: #ff8162;
+
 }
 
 main .alternative {
+
     margin-top: 1rem;
+
 }
 
 main .alternative span {
+
     font-size: 1.1rem;
     font-weight: 400;
     color: rgba(166, 166, 166);
     position: relative;
+
 }
 
 main .alternative span::before, main .alternative span::after {
+
     position: absolute;
     content: '';
     height: 1px;
@@ -119,12 +174,37 @@ main .alternative span::before, main .alternative span::after {
 }
 
 main .alternative span::after {
+
     left: 50px;
+
 }
 
+.or-spacer-vertical {
+    
+    .mask { 
+        
+      overflow:hidden; 
+      width:20px; 
+      height:500px; 
+      position: absolute;
+      top: 25%
+  
+    }
+    &.right .mask:before { 
+      content:''; 
+      display:block; 
+      margin-left:20px;
+      width:20px; 
+      height:100%; 
+      border-radius:12px / 125px; 
+      box-shadow:0 0 8px black;
+    }
+  }
+
 section.images {
+
     display: flex;
     align-items: center;
     padding: 4rem;
-}
 
+}
